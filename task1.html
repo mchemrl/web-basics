@@ -1,0 +1,59 @@
+<!-- Завдання 1. Створити html файл з формою для додавання 
+    викладача. Форма повинна містити наступні поля: 
+    Повне ім’я, стать, дата народження, email, телефон, 
+    бажаний колір фону, країна, місто, коментар. -->
+
+<!DOCTYPE = html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 1</title>
+    </head>
+    <body>
+        <h1>Form for a teacher</h1>
+        <form>
+                <fieldset>
+                    <legend>Required information</legend>
+                <label for="name">Name and surname</label>
+                    <input type="text" id="name" required><br/>
+
+                    <label for="sex">Sex</label>
+                    <input type="radio" id="F" class="sex" name="gender" required>
+                    <label for="F">F</label>
+                    <input type="radio" id="M" class="sex" name="gender" required>
+                    <label for="M">M</label><br/>
+            
+                    <label>Birth date </label>
+                    <input type="date" required><br/>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="youremail@domain.com" required><br/>
+
+                    <label>Phone number</label>
+                    <input type="tel" placeholder="+1..." required><br/>
+                </fieldset>
+
+                <fieldset>
+                <legend>Optional information</legend>
+                <label>Background colour</label>
+                    <input type="color"><br/>
+
+                    <label>Country</label>
+                    <select>
+                        <option>Ukraine</option>
+                        <option>Lithuania</option>
+                        <option>Ireland</option>
+                        <option>Japan</option>
+                        <option>Taiwan</option>
+                    </select><br/>
+                    <label>City<input type="text"></label><br/>
+                    <label>Comment</label><br/>
+                    <textarea placeholder="leave a comment"></textarea><br/>
+            </fieldset>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
