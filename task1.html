@@ -25,32 +25,33 @@
                     <input type="radio" id="M" class="sex" name="gender" required>
                     <label for="M">M</label><br/>
             
-                    <label>Birth date </label>
-                    <input type="date" required><br/>
+                    <label for="birth">Birth date </label>
+                    <input id="birth" type="date" required><br/>
 
-                    <label>Email</label>
-                    <input type="email" placeholder="youremail@domain.com" required><br/>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="youremail@domain.com" required><br/>
 
-                    <label>Phone number</label>
-                    <input type="tel" placeholder="+1..." required><br/>
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" placeholder="+1..." required><br/>
                 </fieldset>
 
                 <fieldset>
                 <legend>Optional information</legend>
-                <label>Background colour</label>
-                    <input type="color"><br/>
+                    <label for="color">Background colour</label>
+                    <input type="color" id="color"><br/>
 
-                    <label>Country</label>
-                    <select>
+                    <label for="country">Country</label>
+                    <select id="country">
                         <option>Ukraine</option>
                         <option>Lithuania</option>
                         <option>Ireland</option>
                         <option>Japan</option>
                         <option>Taiwan</option>
                     </select><br/>
-                    <label>City<input type="text"></label><br/>
-                    <label>Comment</label><br/>
-                    <textarea placeholder="leave a comment"></textarea><br/>
+                    <labe for="city">City</label><br/>
+                    <input type="text" id="city"><br/>
+                    <label for="comment">Comment</label><br/>
+                    <textarea id="comment" placeholder="leave a comment"></textarea><br/>
             </fieldset>
             <input type="submit">
             <input type="reset">
